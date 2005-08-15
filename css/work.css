@@ -1,0 +1,32 @@
+/**
+* Portfolio Section
+*/
+.workSection
+{
+	clear: left;
+}
+.workHeader
+{
+	color: #9C080D;
+	font-weight: bold;
+	font-size:1em;
+	margin-bottom: 2px;
+}
+
+.workDisc
+{
+	font-size: .9em;
+	margin-bottom: 10px;
+}
+
+.thumbnail
+{
+	float: left;
+	width: 100px;
+	border: 1px solid #999;
+	margin: 0 15px 15px 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.clearboth { clear: right; }

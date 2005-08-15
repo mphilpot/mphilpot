@@ -1,0 +1,153 @@
+/* Right Menu */
+#rightCont ul li.blogheader {
+	list-style-type: none;
+	font-weight: bold;
+	color: #9C080D;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+#rightCont ul li ul li.blogmenu {
+	list-style-type: none
+	font-size: .8em;
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+}
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+margin:1.5em 0 .5em;
+}
+.post {
+margin:.5em 0 1.5em;
+border-bottom:1px dotted #ccc;
+padding-bottom:1.5em;
+}
+.post-title {
+margin:.25em 0 0;
+padding:0 0 4px;
+font-weight:normal;
+line-height:1.4em;
+color:#c60;
+}
+.post-title a, .post-title a:visited, .post-title strong {
+display:block;
+text-decoration:none;
+color:#c60;
+font-weight:normal;
+}
+.post-title strong, .post-title a:hover {
+color:#333;
+}
+.post div {
+margin:0 0 .75em;
+line-height:1.6em;
+}
+p.post-footer {
+margin:-.25em 0 0;
+color:#ccc;
+}
+.post-footer em, .comment-link {
+font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+.post-footer em {
+font-style:normal;
+color:#999;
+margin-right:.6em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+border:1px solid #ddd;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:1em 0;
+font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#999;
+}
+#comments h4 strong {
+font-size:130%;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block dt {
+margin:.5em 0;
+}
+#comments-block dd {
+margin:.25em 0 0;
+}
+#comments-block dd.comment-timestamp {
+margin:-.25em 0 2em;
+font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block dd p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+
+/* Profile
+----------------------------------------------- */
+#profile-container {
+margin:0 0 1.5em;
+border-bottom:1px dotted #ccc;
+padding-bottom:1.5em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-img {
+display:inline;
+}
+.profile-img img {
+float:left;
+padding:4px;
+border:1px solid #ddd;
+margin:0 8px 3px 0;
+}
+.profile-data {
+margin:0;
+font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+.profile-data strong {
+display:none;
+}
+.profile-textblock {
+margin:0 0 .5em;
+}
+.profile-link {
+margin:0;
+font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+text-transform:uppercase;
+letter-spacing:.1em;
+}

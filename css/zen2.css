@@ -1,0 +1,128 @@
+/* Page Layout
+----------------------------------------------- */
+body {
+	font-size: 10pt; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #333;
+	background-image: url("../images/background.png");
+}
+
+#container {
+	width: 740px;
+	margin: 10px auto;
+	background: url("../images/content_bg.png") repeat-y top; 
+	border: none;
+	line-height: 130%;
+}
+
+#content {
+	padding: 0px 50px 0px 50px;
+}
+
+#content_footer {
+	clear: both;
+	background: url("../images/footer.png") no-repeat bottom center;
+	font-size: .7em;
+	line-height: 100%;
+	text-align: center;
+	
+	padding: 15px;
+	padding-top: 30px;
+}
+
+#content_header {
+	background: url("../images/header.png") no-repeat bottom center;
+	height: 131px;
+	margin-bottom: 15px;
+}
+
+#leftCont {
+	margin-right: 180px;
+	/* background: #ddd; /* Layout Test Color */ 
+}
+
+#rightCont {
+	float: right;
+	width: 150px;
+	/* background: #ddd; /* Layout Test Color */
+}
+
+/**********************************************************
+* Left Content
+**********************************************************/
+
+#leftCont h1 {
+	font-size: 14pt;
+	color: #999;
+}
+
+#leftCont h2 {
+	font-size: 11pt;
+}
+
+/**********************************************************
+* Right Menu
+**********************************************************/
+#rightCont ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#rightCont ul li.header {
+	list-style-type: none;
+	font-weight: bold;
+	color: #9C080D;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+/**
+ * This is where the error is ;)
+ */
+#rightCont ul li ul {
+	list-style-type: none;
+	list-style-position: inside;
+	font-weight: normal;
+	font-variant: normal;
+	color: #333;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+#rightCont ul li ul li {
+	/*
+	list-style-image: url("../images/bullets/sarrow_rb.gif");
+	*/
+	background: url("../images/bullets/sarrow_rb.gif") no-repeat center left;
+	padding-left: 15px;
+	margin-left: 0px;
+}
+
+#rightCont ul li ul li a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #333;
+}
+
+#rightCont ul li ul li.current {
+	/*
+	list-style-image: url("../images/bullets/sarrow_rb.gif");
+	*/
+	background: url("../images/bullets/sarrow_rb.gif") no-repeat center left;
+	padding-left: 15px;
+	font-weight: bold;
+	margin-left: 0px;
+}
+
+#rightCont ul li ul li a:hover {
+	font-weight: bold;
+	color: #333;
+}
+
+#rightCont div.validate {
+	padding-top: 20px;
+	text-align: center;
+}
