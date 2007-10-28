@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Zencoding
+    = stylesheets :application, :resume
+    = stylesheets :resume_print, :media => 'print'
+    %script{ :type => 'text/javascript', :src => 'http://www.google-analytics.com/urchin.js'}
+    %script
+      _uacct = "UA-169475-1";
+      urchinTracker();
+  %body#resume
+    #header
+      %h1
+        = link "Zencoding", "index.html"
+    #contents
+      = yield
+    #footer
+      &copy; Michael Philpott
