@@ -9,10 +9,11 @@
       _uacct = "UA-169475-1";
       urchinTracker();
   %body#resume
-    #header
-      %h1
-        = link "Zencoding", "index.html"
-    #contents
-      = yield
-    #footer
-      &copy; Michael Philpott
+    #body_container
+      #header
+        %h1
+          = link "Zencoding", "index.html"
+      #contents
+        = yield
+      #footer
+        &copy; Michael Philpott

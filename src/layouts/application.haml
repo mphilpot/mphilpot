@@ -8,23 +8,33 @@
       _uacct = "UA-169475-1";
       urchinTracker();
   %body{ :id => @page_name || "" }
-    #header
-      %h1
-        = link "Zencoding", "index.html"
-    #contents
-      #navigation
-        %h3 Site Navigation
-        %ul
-          %li.home 
-            = link "Home", "index.html"
-          %li.about
-            = link "About"
-          %li.projects
-            = link "Projects"
-          %li.resume
-            = link "Resume"
+    #body_container
+      #header
+        %h1
+          = link "Zencoding", "index.html"
+      #contents
+        #navigation
+          %h3 Site Navigation
+          %ul
+            %li.home 
+              = link "Home", "index.html"
+            %li.about
+              = link "About"
+            %li.projects
+              = link "Projects"
+            %li.resume
+              = link "Resume"
             
-      #main_contents
-        = yield
-    #footer
-      &copy; Michael Philpott
+          %h3 External Links
+          %ul
+            %li.flicker 
+              = link "flicker", "http://www.flickr.com/photos/maloc/"
+            %li.twitter 
+              = link "twitter", "http://twitter.com/mphilpot"
+            %li.pownce
+              = link "pownce", "http://pownce.com/Mphilpot/"
+          
+        #main_contents
+          = yield
+      #footer
+        &copy; Michael Philpott
