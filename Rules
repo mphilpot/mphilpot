@@ -10,21 +10,31 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-compile '/stylesheet/' do
-  # don’t filter or layout
+compile '/stylesheets/*/' do
+  filter :sass
 end
 
 compile '*' do
-  filter :erb
-  layout 'default'
+  layout item[:layout] || 'application'
+  filter :haml, :format => :html5
 end
 
-route '/stylesheet/' do
-  '/style.css'
+route '/stylesheets/*/' do
+  item.identifier.chop + ".css"
+end
+
+# this is a hack to keep the darn thing from blowing up
+route '/' do
+  nil
+end
+
+route '/*' do
+  item.identifier.chop + ".html"
 end
 
 route '*' do
   item.identifier + 'index.html'
+  #item[:filename] 
 end
 
-layout '*', :erb
+layout '*', :haml, :format => :html5

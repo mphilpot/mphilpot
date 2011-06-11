@@ -2,37 +2,37 @@
 %html
   %head
     %title Zencoding
-    = stylesheets :zencoding
+    %link{ :href => '/stylesheets/zencoding.css' }
     %script{ :type => 'text/javascript', :src => 'http://www.google-analytics.com/urchin.js'}
     %script
       _uacct = "UA-169475-1";
       urchinTracker();
-  %body{ :id => @page_name || "" }
+  %body{ :id => @item[:page_name] || '' }
     #body_container
       #header
         %h1
-          = link "Zencoding", "index.html"
+          = link_to "Zencoding", "index.html"
       #contents
         #navigation
           %h3 Site Navigation
           %ul
             %li.home 
-              = link "Home", "index.html"
+              = link_to "Home", "index.html"
             %li.about
-              = link "About"
+              = link_to "About", "about.html"
             %li.projects
-              = link "Projects"
+              = link_to "Projects", "projects.html"
             %li.resume
-              = link "Resume"
+              = link_to "Resume", "resume.html"
             
           %h3 My...
           %ul
             %li.picasa
-              = link "picasa", "http://picasaweb.google.com/mphilpot"
+              = link_to "picasa", "http://picasaweb.google.com/mphilpot"
             %li.flicker 
-              = link "flicker", "http://www.flickr.com/photos/maloc/"
+              = link_to "flicker", "http://www.flickr.com/photos/maloc/"
             %li.twitter 
-              = link "twitter", "http://twitter.com/mphilpot"
+              = link_to "twitter", "http://twitter.com/mphilpot"
           
         #main_contents
           = yield

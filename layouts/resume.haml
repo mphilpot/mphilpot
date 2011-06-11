@@ -2,8 +2,9 @@
 %html
   %head
     %title Zencoding
-    = stylesheets :zencoding, :resume
-    = stylesheets :resume_print, :media => 'print'
+    %link{ :href => '/stylesheets/zencoding.css' }
+    %link{ :href => '/stylesheets/resume.css' }
+    %link{ :href => '/stylesheets/resume_print.css', :media => 'print' }
     %script{ :type => 'text/javascript', :src => 'http://www.google-analytics.com/urchin.js'}
     %script
       _uacct = "UA-169475-1";
@@ -12,7 +13,7 @@
     #body_container
       #header
         %h1
-          = link "Zencoding", "index.html"
+          = link_to "Zencoding", "index.html"
       #contents
         = yield
       #footer
