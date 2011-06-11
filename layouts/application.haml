@@ -2,37 +2,37 @@
 %html
   %head
     %title Zencoding
-    %link{ :href => '/stylesheets/zencoding.css' }
+    %link{ :href => '/stylesheets/zencoding.css', :media => 'all', :rel => 'stylesheet', :type => 'text/css'}
     %script{ :type => 'text/javascript', :src => 'http://www.google-analytics.com/urchin.js'}
     %script
       _uacct = "UA-169475-1";
       urchinTracker();
-  %body{ :id => @item[:page_name] || '' }
+  %body{ :id => '' }
     #body_container
       #header
         %h1
-          = link_to "Zencoding", "index.html"
+          %a{:href => "index.html"} Zencoding
       #contents
         #navigation
           %h3 Site Navigation
           %ul
             %li.home 
-              = link_to "Home", "index.html"
+              %a{:href => "index.html"} Home
             %li.about
-              = link_to "About", "about.html"
+              %a{:href => "about.html"} About
             %li.projects
-              = link_to "Projects", "projects.html"
+              %a{:href => "projects.html"} Projects
             %li.resume
-              = link_to "Resume", "resume.html"
+              %a{:href => "resume.html"} Resume
             
           %h3 My...
           %ul
             %li.picasa
-              = link_to "picasa", "http://picasaweb.google.com/mphilpot"
+              %a{:href => "http://picasaweb.google.com/mphilpot"} picasa
             %li.flicker 
-              = link_to "flicker", "http://www.flickr.com/photos/maloc/"
+              %a{:href => "http://www.flickr.com/photos/maloc/"} flicker
             %li.twitter 
-              = link_to "twitter", "http://twitter.com/mphilpot"
+              %a{:href => "http://twitter.com/mphilpot"} twitter
           
         #main_contents
           = yield
