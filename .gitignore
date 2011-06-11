@@ -1,1 +1,3 @@
-site/stylesheets
+.sass*
+output
+tmp
