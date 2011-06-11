@@ -17,8 +17,11 @@ end
 compile '/images/*' do
 end
 
+compile '/transcript/' do
+end
+
 compile '*' do
-  filter :haml, :format => :html5
+  filter :haml, :format => :html5 unless item[:extension] == "html"
   layout item[:layout] || 'application'
 end
 
