@@ -1,11 +1,11 @@
 task :build do
-  `staticmatic build ./`
+  `nanoc compile`
 end
 
 task :deploy => :build do
-  `scp -r site/* zencoding.net:~/web/public/`
+  `scp -r output/* zencoding.net:~/web/public/`
 end
 
-task :preview do
-  `staticmatic preview ./`
+task :preview => :build do
+  `nanoc view`
 end
