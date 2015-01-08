@@ -1,0 +1,22 @@
+{
+  "name": "zencoding.net",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mphilpot/mphilpot.github.io",
+  "authors": [
+    "Michael Philpott <mphilpot@gmail.com>"
+  ],
+  "description": "zencoding.net",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.1"
+  }
+}
