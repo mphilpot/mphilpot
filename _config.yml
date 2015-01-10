@@ -1,0 +1,13 @@
+# Site settings
+title: Zencoding
+email: mphilpot@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Zencoding.net is mphilpot's glacially updated site.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zencoding.net" # the base hostname & protocol for your site
+twitter_username: mphilpot
+github_username:  mphilpot
+
+# Build settings
+markdown: kramdown
+exclude: ['README.md', 'bower.json']
